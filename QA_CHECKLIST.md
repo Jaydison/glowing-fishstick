@@ -34,3 +34,14 @@ Test at 320, 375, 768, 1024, and 1440 CSS pixels in Chrome, Firefox, and Microso
 - Major: required workflow cannot be completed.
 - Minor: validation, translation, responsive, or accessibility issue with workaround.
 - Cosmetic: visual inconsistency only.
+
+## End-to-end organisation journey
+- Create a new QA account with verification code `123456`.
+- Submit a tuition centre or independent tutor application.
+- Sign in with the newly created browser-local account and view pending status.
+- Use Platform Administrator to add a review note, request information, and approve the application.
+- Return to the new Organisation Administrator account and complete the onboarding tracker.
+- Copy and open the provider-specific matching link.
+- Submit a learner request and approve the placement.
+- Confirm the classroom capacity increases only once.
+- Print the matching poster and check the QR placeholder and provider route.

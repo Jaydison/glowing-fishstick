@@ -33,3 +33,7 @@ The page structure, custom CSS, translations, validation rules, and service call
 ## GitHub Pages limitation
 
 This build is not secure authentication and not shared persistence. Each tester has isolated browser data. It is intended for workflow, responsive, accessibility, and QA testing before backend integration.
+
+## Complete organisation QA journey
+
+New testers can create a browser-local QA account and submit an organisation application. Use verification code `123456` and a dummy password that is not used anywhere else. The Platform Administrator profile can review the application, save an internal note, request more information, approve it, or reject it. After approval, sign back in with the new QA account to test organisation onboarding, matching-link sharing, learner requests, and placement.
