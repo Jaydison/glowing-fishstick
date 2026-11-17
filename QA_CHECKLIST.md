@@ -52,3 +52,12 @@ Test at 320, 375, 768, 1024, and 1440 CSS pixels in Chrome, Firefox, and Microso
 - Confirm both Organisation Administrator and Tutor navigation are available.
 - Create a classroom without receiving “Add an active tutor first”.
 - Confirm the automatically created tutor profile is active and assigned to the classroom.
+
+## Provider-link routing regression
+- Create and approve a new organisation with slug `test`.
+- Copy its matching link and confirm it uses `#provider-match/test`.
+- Open the link in another tab in the same browser profile.
+- Confirm the fresh organisation, not ABC Tuition Centre, is displayed.
+- Confirm its recommendations contain only that organisation's tutors and classrooms.
+- Change the slug to an invalid value and confirm “Organisation not found” appears instead of a fallback tenant.
+- Confirm the legacy format `#provider-match?org=test` still resolves correctly.
