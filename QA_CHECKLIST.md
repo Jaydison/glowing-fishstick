@@ -45,3 +45,10 @@ Test at 320, 375, 768, 1024, and 1440 CSS pixels in Chrome, Firefox, and Microso
 - Submit a learner request and approve the placement.
 - Confirm the classroom capacity increases only once.
 - Print the matching poster and check the QR placeholder and provider route.
+
+## Independent tutor activation regression
+- Register an independent tutor and approve the application as Platform Administrator.
+- Sign in again as the new independent tutor.
+- Confirm both Organisation Administrator and Tutor navigation are available.
+- Create a classroom without receiving “Add an active tutor first”.
+- Confirm the automatically created tutor profile is active and assigned to the classroom.
