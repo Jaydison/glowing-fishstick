@@ -83,3 +83,11 @@ Test at 320, 375, 768, 1024, and 1440 CSS pixels in Chrome, Firefox, and Microso
 - Classroom tutor choices contain active tutors from the current organisation only.
 - Attendance QR contains the selected session ID and a generated session code.
 - Invalid classroom or availability time ranges are rejected when end time is not later than start time.
+
+## Public matching navigation regression
+- Open a provider matching link in a normal tab.
+- Select Home in the header and confirm the landing page renders immediately without refresh.
+- Return to the provider matching page, then select How it works and Support; each destination must render immediately.
+- Select QA sign in and confirm the sign-in page renders immediately.
+- Use the browser Back and Forward buttons between Home, QA sign in and provider matching.
+- Confirm the URL hash and visible page remain synchronized after every navigation action.
