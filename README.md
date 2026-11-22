@@ -37,3 +37,7 @@ This build is not secure authentication and not shared persistence. Each tester 
 ## Complete organisation QA journey
 
 New testers can create a browser-local QA account and submit an organisation application. Use verification code `123456` and a dummy password that is not used anywhere else. The Platform Administrator profile can review the application, save an internal note, request more information, approve it, or reject it. After approval, sign back in with the new QA account to test organisation onboarding, matching-link sharing, learner requests, and placement.
+
+## QR generation in QA
+
+TutorBit uses the public QR Server image endpoint for QA QR images. An internet connection is required to display and download provider and attendance QR codes. During AWS migration, replace this helper with a bundled QR generator or a server-generated image if third-party QR processing is not acceptable.

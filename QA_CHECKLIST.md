@@ -61,3 +61,25 @@ Test at 320, 375, 768, 1024, and 1440 CSS pixels in Chrome, Firefox, and Microso
 - Confirm its recommendations contain only that organisation's tutors and classrooms.
 - Change the slug to an invalid value and confirm “Organisation not found” appears instead of a fallback tenant.
 - Confirm the legacy format `#provider-match?org=test` still resolves correctly.
+
+## Test-result regression suite, 22 November 2026
+- Landing hero explains the preview purpose and no unexplained “One controlled journey” card remains.
+- Switching to Bahasa Melayu translates landing, dashboard, forms, tables, actions, empty states and modal content, not navigation alone.
+- Open matching page changes to the correct provider page immediately without refresh.
+- Provider workspace displays a scannable QR image and a Download QR action.
+- Classroom form explicitly requires an active tutor selection.
+- Classroom can be edited, closed/reopened and deleted; related QA sessions/enrolments require confirmation and are cleaned up.
+- Pending matching table contains pending requests only; approved/rejected requests appear in History.
+- Matching request Selection displays the classroom or tutor name, never a raw ID such as `c1`.
+- Each session has an Attendance QR action with session code, QR image and download action.
+- Attendance cards show session/classroom details, check-in controls, enrolled learners and verification status.
+- Selected learner is highlighted, exposed with `aria-pressed`, shown under the guardian name and repeated on the matching page.
+- TutorBit wordmark has no space between Tutor and Bit.
+- Independent tutor registration accepts up to two initial availability blocks.
+- Tutor profile supports adding, editing and deleting multiple availability blocks.
+
+## Case-test data integrity
+- Deleting a classroom removes only its QA sessions and enrolments, never another organisation’s records.
+- Classroom tutor choices contain active tutors from the current organisation only.
+- Attendance QR contains the selected session ID and a generated session code.
+- Invalid classroom or availability time ranges are rejected when end time is not later than start time.
